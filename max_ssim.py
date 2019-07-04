@@ -20,6 +20,7 @@ img2 = Variable( img2, requires_grad = True)
 
 
 # Functional: pytorch_ssim.ssim(img1, img2, window_size = 11, size_average = True)
+print(pytorch_ssim.ssim(img1, img2))
 ssim_value = pytorch_ssim.ssim(img1, img2).data[0]
 print("Initial ssim:", ssim_value)
 
